@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NamaGame</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ImageContainer">
+            <img src="assets/TITLE-SCREEN.png" alt="">
+        </div>
+        <div class="OverlayImg">
+            <img src="assets/1-bit_UI_byBatuhanK_2_(1).png" alt="">
+        </div>
+        <div class="OverlayText">
+            <h1>NamaGame</h1>
+            <h2>Uji Kecerdasanmu!</h2>
+            <br>
+            <img src="assets/1-bit_UI_byBatuhanK_2.png" id="img1" onmouseover="changeImage(1, this)" onmouseout="changeImage (2, this)">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('img1').addEventListener("click",changePej)
+
+        function changePej(){
+            
+            window.location.assign("stage1.html")
+        }
+    </script>
+    <script>
+        function changeImage(x, image) {
+            if (x == 1) 
+            {
+                image.src = '/assets/1-bit_UI_byBatuhanK_2-1.png';
+            }
+            if (x==2)
+            {
+                image.src = '/assets/1-bit_UI_byBatuhanK_2.png';
+            }
+        }
+    </script>
+</body>
+</html>

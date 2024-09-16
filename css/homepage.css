@@ -1,0 +1,80 @@
+/* body {
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+} */
+
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0%;
+    /* background: url('/assets/TITLE-SCREEN.png') no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.ImageContainer {
+    position: relative;
+    display: inline-block;
+    height: 92vh;
+    margin: 0%;
+}
+
+.ImageContainer img {
+    display: block;
+    width: 100%;
+    height: 110%;
+}
+
+.OverlayImg {
+    position: absolute;
+    top: 1%;
+    left: 94%;
+}
+
+.OverlayImg img {
+    width: 80px;
+}
+
+
+.OverlayText {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 200%;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    color: #7D759E;
+
+}
+
+
+.OverlayText h2 {
+    font-size: 80%;
+    color: #858585;
+}
+
+.OverlayText #img1 {
+    margin-top: 35px;
+    width: 30%;
+    border-radius: 100%;
+}
+
+.OverlayText #img1:hover {
+    transform: scale(90%);
+}
