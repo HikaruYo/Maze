@@ -69,12 +69,12 @@ body {
     color: #858585;
 }
 
-.OverlayText #img1 {
+.OverlayText #playButton {
     margin-top: 35px;
     width: 30%;
     border-radius: 100%;
 }
 
-.OverlayText #img1:hover {
+.OverlayText #playButton:hover {
     transform: scale(90%);
 }

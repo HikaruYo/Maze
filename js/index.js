@@ -3,7 +3,7 @@
 
 
 // Function untuk mengganti halaman
-document.getElementById('img1').addEventListener("click",changePej)
+document.getElementById('playButton').addEventListener("click",changePej)
 
 function changePej(){
     window.location.assign("stage1.html")
