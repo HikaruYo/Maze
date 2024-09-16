@@ -78,3 +78,51 @@ body {
 .OverlayText #playButton:hover {
     transform: scale(90%);
 }
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    /* Untuk animasi */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-container.show {
+    display: block; /* Tampilkan saat ada class 'show' */
+    opacity: 1; /* Animasi muncul */
+    transform: translateY(0); /* Menu turun ke posisi aslinya */
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-container li {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-container li:hover {
+    background-color: #555;
+}
+
+.menu-container li:nth-child(1):hover, /* Profile */
+.menu-container li:nth-child(3):hover { /* Credit */
+    background-color: transparent;
+    cursor: default;
+}
+
+.menu-container li:nth-child(3) {
+    margin-top: 20px;
+}

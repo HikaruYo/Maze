@@ -19,3 +19,43 @@ function changeImage(x, image) {
         image.src = '/assets/1-bit_UI_byBatuhanK_2.png';
     }
 }
+
+
+// 
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+
+    if (menu.classList.contains('show')) {
+        // Tutup menu
+        menu.classList.remove('show');
+        
+        // Tunggu animasi selesai sebelum mengubah display
+        setTimeout(() => {
+            menu.style.display = 'none';
+        }, 300);
+    } else {
+        // Tampilkan menu
+        menu.style.display = 'block';
+        setTimeout(() => {
+            menu.classList.add('show');
+        }, 10);
+    }
+}
+
+
+// Event listener untuk mendeteksi klik di luar menu
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('menu');
+    const menuIcon = document.querySelector('.OverlayImg');
+
+    // Jika menu sedang terbuka dan klik terjadi di luar menu atau tombol menu
+    if (menu.classList.contains('show') && !menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        // Tutup menu
+        menu.classList.remove('show');
+        
+        // Tunggu animasi sebelum menyembunyikan dengan display: none
+        setTimeout(() => {
+            menu.style.display = 'none';
+        }, 300);
+    }
+});
