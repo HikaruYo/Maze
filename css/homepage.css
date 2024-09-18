@@ -50,6 +50,10 @@ body {
     width: 80px;
 }
 
+.OverlayImg img:hover {
+    transform: scale(90%);
+}
+
 
 .OverlayText {
     position: absolute;

@@ -15,11 +15,19 @@ function changeImage(x, image) {
     if (x == 1) {
         image.src = '/assets/1-bit_UI_byBatuhanK_2-1.png';
     }
-    if (x==2) {
+    if (x == 2) {
         image.src = '/assets/1-bit_UI_byBatuhanK_2.png';
     }
 }
 
+function changOverlayImage(y, image) {
+    if (y == 1) {
+        image.src = '/assets/1-bit_UI_byBatuhanK_2_(1)-1.png';
+    }
+    if (y == 2) {
+        image.src = '/assets/1-bit_UI_byBatuhanK_2_(1).png';
+    }
+};
 
 // 
 function toggleMenu() {
